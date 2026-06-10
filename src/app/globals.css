@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+/* Outlined word */
+.outlined-word {
+  color: transparent;
+  -webkit-text-stroke: 1.5px #99b81b;
+}
+
+/* Marquee animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 60s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
