@@ -51,7 +51,7 @@ export default function TaglineTicker() {
 
   return (
     <>
-      <div className="w-full overflow-hidden  bg-white py-6">
+      <div className="w-full overflow-hidden  bg-white py-3 md:py-6">
         {/* Track — doubled for seamless loop */}
         <div className="marquee-track flex w-max items-center">
           {firstHalf.map(renderWord)}
