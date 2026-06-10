@@ -3,6 +3,7 @@ import FeaturesAndPrograms from "./components/FeaturesAndPrograms";
 import HeroSection from "./components/Hero";
 import LocationHighlights from "./components/LocationHighlights";
 import TaglineTicker from "./components/TaglineTicker";
+import Team from "./components/Team";
 import VisionBanner from "./components/VisionBanner";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <FeaturesAndPrograms />
       <TaglineTicker />
       <LocationHighlights />
+      <Team />
     </>
   );
 }
