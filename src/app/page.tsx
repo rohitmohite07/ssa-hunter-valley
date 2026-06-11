@@ -1,6 +1,8 @@
 import AboutSection from "./components/AboutSection";
+import CoachesAndEvents from "./components/CoachesAndEvents";
 import Facilities from "./components/Facilities";
 import FeaturesAndPrograms from "./components/FeaturesAndPrograms";
+import Footer from "./components/Footer";
 import HeroSection from "./components/Hero";
 import LocationHighlights from "./components/LocationHighlights";
 import TaglineTicker from "./components/TaglineTicker";
@@ -18,6 +20,8 @@ export default function Home() {
       <LocationHighlights />
       <Team />
       <Facilities />
+      <CoachesAndEvents />
+      <Footer />
     </>
   );
 }
