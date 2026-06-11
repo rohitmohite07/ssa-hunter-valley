@@ -1,4 +1,5 @@
 import AboutSection from "./components/AboutSection";
+import Facilities from "./components/Facilities";
 import FeaturesAndPrograms from "./components/FeaturesAndPrograms";
 import HeroSection from "./components/Hero";
 import LocationHighlights from "./components/LocationHighlights";
@@ -16,6 +17,7 @@ export default function Home() {
       <TaglineTicker />
       <LocationHighlights />
       <Team />
+      <Facilities />
     </>
   );
 }
