@@ -52,7 +52,10 @@ export default function AboutSection() {
   const current = tabData[activeTab];
 
   return (
-    <section className="relative w-full overflow-hidden bg-white my-16">
+    <section
+      id="about-section"
+      className="relative w-full overflow-hidden bg-white my-16"
+    >
       <svg
         width="307"
         height="380"

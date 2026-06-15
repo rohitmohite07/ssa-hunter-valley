@@ -52,9 +52,8 @@ export default function LocationHighlights() {
                   </span>
 
                   <span
-                    className="mx-2 shrink-0 grow-0"
+                    className="mx-2 shrink-0 flex-1"
                     style={{
-                      width: "60px",
                       borderTop: "1.5px dashed rgba(255,255,255,0.35)",
                       flexShrink: 0,
                     }}

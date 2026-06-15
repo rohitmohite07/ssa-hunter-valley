@@ -1,7 +1,11 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+import ContactModal from "./ContactModal";
 
 export default function Topbar() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
       <header className="absolute inset-x-0 top-0 z-100 flex h-16 items-center justify-between bg-white px-8 shadow-[0_1px_0_rgba(0,0,0,0.08)]">
@@ -10,17 +14,24 @@ export default function Topbar() {
           <Image
             src="/SSA-Logo.png"
             alt="logo"
-            width={120}
             height={48}
+            width={120}
             className="h-16 w-auto -ml-6"
           />
         </Link>
 
         {/* Contact Us button */}
-        <button className="cursor-pointer rounded-full border-[1.5px] border-[#1a1a1a] bg-transparent px-6 py-2 text-[13px] font-medium tracking-[0.02em] text-[#1a1a1a] transition-all duration-200 hover:bg-[#1a1a1a] hover:text-white">
+        <button
+          onClick={() => setIsModalOpen(true)}
+          className="cursor-pointer rounded-full border-[1.5px] border-[#1a1a1a] bg-transparent px-6 py-2 text-[13px] font-medium tracking-[0.02em] text-[#1a1a1a] transition-all duration-200 hover:bg-[#1a1a1a] hover:text-white"
+        >
           Contact Us
         </button>
       </header>
+      <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
     </>
   );
 }

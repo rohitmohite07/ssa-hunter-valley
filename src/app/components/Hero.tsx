@@ -103,9 +103,16 @@ export default function HeroSection() {
           </button>
 
           {/* Down arrow */}
-          <div className="flex animate-bounce flex-col items-center">
+          <button
+            className="flex animate-bounce flex-col items-center cursor-pointer"
+            onClick={() => {
+              document
+                .getElementById("about-section")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
             <HiArrowLongDown size={40} color="#D2F24F" />
-          </div>
+          </button>
         </div>
 
         {/* ── Weather Widget */}
